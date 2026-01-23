@@ -1,4 +1,4 @@
-#LeetCode DSA Practice(C++)
+# LeetCode DSA Practice(C++)
 
 
 This repository contains my solutions to LeetCode DSA problems in C++.
