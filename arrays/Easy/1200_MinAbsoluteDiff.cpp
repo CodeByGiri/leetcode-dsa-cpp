@@ -12,7 +12,7 @@ public:
         sort(arr.begin(),arr.end());
 
         int n=arr.size();
-        int minDiff = arr[1]-arr[0]; 
+        int minDiff = arr[1]-arr[0];    //minDiff= INT_MAX can also be used
 
         for(int i=1;i<n;i++){
              minDiff=min(minDiff,arr[i]-arr[i-1]); //Find the absolute minimum difference 
