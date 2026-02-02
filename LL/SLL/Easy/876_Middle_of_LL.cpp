@@ -25,3 +25,16 @@ public:
 
     }
 };
+
+
+if(head == NULL) return head;
+
+ListNode *fast = head;
+ListNode *slow = head;
+
+while(fast != NULL && fast->next != NULL){
+    slow = slow->Next;
+    fast = fast->next->next;
+}
+
+return slow;
