@@ -24,3 +24,18 @@ public:
     return prev;
     }
 };
+
+
+if (head == NULL) return head;
+
+ListNode *current = head;
+ListNode *prev = NULL;
+
+while(current != NULL){
+    ListNode *next = current->next;
+    current->next = prev;
+    prev = current;
+    current = next;
+}
+
+return prev;

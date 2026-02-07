@@ -38,3 +38,34 @@ public:
         return true;
     }
 };
+
+
+if(head == NULL) return false;
+
+ListNode *fast = head;
+ListNode *slow = head;
+
+while(fast != NULL && fast->next != NULL){
+    slow = slow->next;
+    fast = fast->next->next;
+}
+
+
+ListNode *prev = NULL;
+ListNode *current = slow;
+
+while(current != NULL){
+    ListNode *next = current->next;
+    current->next = prev;
+    prev = current;
+    current = next;
+}
+
+ListNode *head1 = prev;
+
+while(prev != NULL){
+    if(head->val != head1->val) return false
+    head1 = head1->next;
+    prev = prev->next;
+}
+return true;
