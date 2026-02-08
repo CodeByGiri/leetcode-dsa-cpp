@@ -37,4 +37,4 @@ public:
 
 //Rather than making a separate case to deal with head deletion, we make a dummy before head so head deletion can be implemented with the normal deletion logic.
 //We gotta move fast pointer n steps forward so that a gap of n is created between fast and slow pointer, after which we will be running both pointer together till
-// fast points to NULL. At this point, slow will be the node just before the node which we wanna delete.
+// fast reaches End Of List. At this point, slow will be the node just before the node which we wanna delete.
