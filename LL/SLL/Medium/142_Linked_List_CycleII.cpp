@@ -42,4 +42,5 @@ public:
 // When they meet, start a new pointer from head(entry node)
 //Now we have a pointer that starts from head and other which already exists in the cycle. We move both these pointers one step ahead. 
 // Since the distance from head to the cycle start equals the distance from the meeting point to the cycle start,
-// moving both pointers one step at a time guarantees they meet exactly at the entry node.
+// moving both pointers one step at a time guarantees they meet exactly at the entry node.(i.e, they'll wrap around to make the nodes equal)
+
