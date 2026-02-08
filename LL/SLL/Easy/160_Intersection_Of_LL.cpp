@@ -7,7 +7,8 @@
 // Traverse both lists using two pointers.
 // When a pointer reaches the end, redirect it to the other list.
 // We are doing this because unequal length LL's when we are traversing one might skip the intersection point because other might have not reached there.
-
+//So what happens in that by making sure both the pointers are traversing the other list too, we get to know there have been equal traversals for both the pointers.
+//If there was no shared portion, eventually the pointers run out and we return 0
 
 class Solution {
 public:
