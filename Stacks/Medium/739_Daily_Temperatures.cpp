@@ -1,3 +1,12 @@
+// Problem: 496. Next Greater Element I
+// Technique: Next Greater Element Mapping
+// Time Complexity: O(n + m)
+// Space Complexity: O(n)
+//
+// Idea: Like we did for next greater element, we will be storing the coming indices of the temps to the stack, then we will check if temp in current indice is greater than temp in stack.top() indice.
+// If the check comes out to be true, we check the difference between these indices and store them in the ans array, then we push the current indice into the stack and continue the check for it with next
+//indices and so on.
+
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
