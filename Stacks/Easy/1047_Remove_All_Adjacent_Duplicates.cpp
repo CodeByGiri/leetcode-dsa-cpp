@@ -1,3 +1,8 @@
+// Problem: 1047. Remove All Adjacent Duplicates In String
+// Technique: Stack Simulation
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 class Solution {
 public:
     string removeDuplicates(string s) {
