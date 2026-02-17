@@ -1,3 +1,8 @@
+// Problem: 682. Baseball Game
+// Technique: Stack Simulation
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 class Solution {
 public:
     int calPoints(vector<string>& operations) {
