@@ -4,23 +4,27 @@ public:
         
         stack<int> st;
 
-        for(string op : operations){
+        for(string op : operations){    //we use string cause nos can be 2 digit too
 
             if(op == "C"){
                 st.pop();
             }
+
             else if(op == "D"){
                 st.push(2 * st.top());
             }
+
             else if(op == "+"){
                 int a = st.top(); st.pop();
                 int b = st.top();
                 st.push(a);
                 st.push(a + b);
             }
+
             else{
-                st.push(stoi(op));
+                st.push(stoi(op));     //convert string to int
             }
+
         }
 
         int sum = 0;
