@@ -9,6 +9,7 @@
 // Store (sum % 10) as new digit node.
 // Update carry as (sum / 10).
 // Continue until both lists end and carry becomes 0.
+//We use tail and dummy to keep track of the digits that are formed as the sum and atlast dummy->next is provided to return the head of the sum LL.
 
 class Solution {
 public:
