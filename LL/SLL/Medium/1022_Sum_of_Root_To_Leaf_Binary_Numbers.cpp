@@ -1,3 +1,6 @@
+// Problem: 1022. Sum of Root To Leaf Binary Numbers
+// Technique: DFS + Accumulated Binary Value
+
 class Solution {
 public:
         int dfs(TreeNode *node, int current){
