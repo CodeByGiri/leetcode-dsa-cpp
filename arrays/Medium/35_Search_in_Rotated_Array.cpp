@@ -3,7 +3,6 @@
 // Time Complexity: O(log n)
 // Space Complexity: O(1)
 ///
-///
 // Idea: When an array is rotated, only half of it would be sorted, the other half is gonna have a disruption due to the presence of mid element. So we check which side is sorted first.
 //Once we find the sorted side, we try to check the presence of target in that side since that half is sorted and it acts like normal binary search. 
 //If no elements are found, we return -1.
