@@ -6,7 +6,7 @@
 //area = width * height 
 // width is difference between last and first pointer
 //height is the shorter height of the height of lines we choose
-
+///
 //objective is to maximize area, so we need to take two lines in such a way such that min(height) is the a large value and a decent amt of width is possible
 //ex: a scenario where we have width 5 and height of lines as(6,8) is much better than a width of 6 and height of lines of(3,8) cause area is more for the former.
 
