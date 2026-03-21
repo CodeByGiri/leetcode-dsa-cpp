@@ -1,3 +1,8 @@
+//567. Permutations in a String
+// Method: Sliding Window
+//Time Complexity: O(n)
+//Space Complexity:O(n)
+
 class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
