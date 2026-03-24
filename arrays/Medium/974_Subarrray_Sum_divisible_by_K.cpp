@@ -1,3 +1,6 @@
+//974. Subarray Sum Divisible by K
+//Method: Hashing
+
 class Solution {
 public:
     int subarraysDivByK(vector<int>& nums, int k) {
