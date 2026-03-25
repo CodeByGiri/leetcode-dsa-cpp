@@ -1,3 +1,7 @@
+//424.Longest Repeating Character Replacement
+//Method: Sliding Window
+//Complexity(Time) : O(n)
+///
 class Solution {
 public:
     int characterReplacement(string s, int k) {
