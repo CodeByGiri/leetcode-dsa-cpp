@@ -1,6 +1,12 @@
 //438. Find indices of all anagrams in a word
 //Method: Hashing + Sliding Window
-
+//Complexity(Time) : O(n)
+///
+//Objective: Find all the anagrams of a small string p in a string s. For this we take the count of characters in p. 
+//Then, we initiate a window in the main string, and start trying to match the no of characters. Once a match is found, we 
+//push that back the starting indice, basically the left pointer value to the answer array. If the window size exceeds the string p
+//size, we shrink the window by moving the left pointer forward.
+///
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
