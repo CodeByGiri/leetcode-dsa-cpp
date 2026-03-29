@@ -1,4 +1,6 @@
-
+//2273. Remove Anagrams
+// Requires u to remove anagrams from words.Go through word by word, sort them, duplicates will be adjacent to each other.
+//first occurence of each new word, push it to ans array.
 
 class Solution {
 public:
