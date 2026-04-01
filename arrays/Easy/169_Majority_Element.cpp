@@ -1,3 +1,6 @@
+//169.Majority Element
+//Array Based
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
