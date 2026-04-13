@@ -1,5 +1,3 @@
-//49. Group Anagrams
-// Method: Hashing
 
 class Solution {
 public:
