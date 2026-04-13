@@ -1,5 +1,8 @@
-
-
+// 503. Next Greater Element II
+// Topic : Stacks
+////////
+//Description: Idea is to find the greater element for rightmost occuring elements by seeing if larger elements for it occur before it, so for this
+// We go for 2nd run through array, now on 2nd iteration we don't push the element into stack because it leads to duplicate pushes to stack.
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
