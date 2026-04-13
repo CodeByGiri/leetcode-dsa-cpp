@@ -1,7 +1,8 @@
 //49. Group Anagrams
 // Method: Hashing
 //
-//Description: In a vector of string of words, we need to group different anagrams together, we sort the words, so we get a common key for anagrams, we push them to a hash map, and then in the ans array, we push just the count of these anagrams back.
+//Description: In a vector of string of words, we need to group different anagrams together, we sort the words, so we get a common key for anagrams, we push them to a hash map, and then in the ans array,
+// we push the group of different anagrams back as output.
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
