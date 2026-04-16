@@ -1,5 +1,3 @@
-//84. Largest Rectangle in Histogram
-//Topic: Stacks
 
 class Solution {
 public:
