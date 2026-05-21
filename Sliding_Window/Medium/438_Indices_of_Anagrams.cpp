@@ -10,28 +10,28 @@
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
-        
+
         vector<int> ans;
 
-        vector<int> count(26,0);
-        for(char c : p){
-            count[c - 'a']++;
+        vector<int> need(26, 0);
+
+        for(char c : p) {
+            need[c - 'a']++;
         }
 
         int k = p.length();
         int l = 0;
-        vector<int> target(26,0);
+        vector<int> window(26, 0);
 
-        for(int r = 0; r < s.size() ; r++){
-            target[s[r] - 'a']++;
-
-            if(r - l + 1 > k){
-                target[s[l] - 'a']--;
+        for(int r = 0; r < s.size(); r++) {
+            window[s[r] - 'a']++;
+            if(r - l + 1 > k) {
+                window[s[l] - 'a']--;
                 l++;
             }
 
-            if(r - l + 1 == k){
-                if(target == count){
+            if(r - l + 1 == k) {
+                if(window == need) {
                     ans.push_back(l);
                 }
             }
